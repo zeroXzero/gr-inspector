@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<block>
+  <name>DNN classifier</name>
+  <key>inspector_dnn_classif</key>
+  <category>Inspector</category>
+  <import>import inspector</import>
+  <make>inspector.dnn_classif($path)</make>
+    <param>
+      <name>Weights path</name>
+      <key>path</key>
+      <value>/home/rsreeraj/gnu_work/mod_classif</value>
+      <type>string</type>
+    </param>
+	<sink>
+		<name>in</name>
+		<type>float</type>
+		<vlen>512</vlen>
+	</sink>
+	<source>
+	<name>out</name>
+	<type>message</type>
+	</source>
+</block>
